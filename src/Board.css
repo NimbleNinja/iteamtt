@@ -1,0 +1,87 @@
+.board-box {
+  position: relative;
+}
+.board-row {
+  display: flex;
+}
+.g-line-top,
+.g-line-bottom {
+  position: absolute;
+  top: 98px;
+  left: -10px;
+  border-radius: 3px;
+  background: #a855c1;
+  width: 320px;
+  height: 4px;
+}
+.g-line-bottom {
+  top: 198px;
+}
+.v-line-top,
+.v-line-bottom {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 148px;
+  left: -60px;
+  border-radius: 3px;
+  background: #a855c1;
+  width: 320px;
+  height: 4px;
+}
+.v-line-bottom {
+  left: 42px;
+}
+
+.g-top,
+.g-midle,
+.g-bottom,
+.v-left,
+.v-midle,
+.v-right,
+.l-cross,
+.r-cross {
+  position: absolute;
+  z-index: 10;
+  left: 10px;
+  top: 46px;
+  height: 8px;
+  background: #af3d38;
+  width: 280px;
+  border-radius: 3px;
+}
+.g-midle {
+  top: 146px;
+}
+.g-bottom {
+  top: 246px;
+}
+.v-left,
+.v-midle,
+.v-right {
+  transform: rotate(90deg);
+  top: 146px;
+}
+.v-left {
+  left: -90px;
+}
+.v-midle {
+  left: 10px;
+}
+.v-right {
+  left: 110px;
+}
+.l-cross {
+  transform: rotate(45deg);
+}
+.r-cross {
+  transform: rotate(-45deg);
+}
+.l-cross,
+.r-cross {
+  top: 147px;
+  left: -30px;
+  width: 360px;
+}
+.none {
+  display: none;
+}

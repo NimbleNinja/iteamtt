@@ -1,0 +1,33 @@
+.square {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cross,
+.circle {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.cross::before,
+.cross::after {
+  position: absolute;
+  content: "";
+  width: 130%;
+  height: 8px;
+  background-color: #c4c4c4;
+  left: -12px;
+  top: 46%;
+}
+.cross::before {
+  transform: rotate(45deg);
+}
+.cross::after {
+  transform: rotate(-45deg);
+}
+.circle {
+  border: 7px solid #c4c4c4;
+  border-radius: 50%;
+}
